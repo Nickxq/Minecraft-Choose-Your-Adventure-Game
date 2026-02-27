@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You Died! | Minecraft Adventure</title>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/minecraftia" type="text/css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <audio id="bgm" src="media/music.mp3" loop></audio>
+  <audio id="death-sound" src="media/death_sound.mp3" autoplay></audio>
+
+  <div class="page">
+    <img class="bg" src="media/death_mining_bg.png" alt="Death Scene" />
+    <div class="death-tint"></div>
+    <div class="overlay"></div>
+
+    <div class="content">
+      <div class="title" style="color:#FF4444;">You Died!</div>
+      <div class="description">
+        Greed gets the better of you. You mine deeper, collecting more coal and even some 
+        iron ore. The groaning grows louder but you ignore it. Suddenly, you hear the 
+        clicking sound of spider legs and the rattling of skeleton bones. You turn to run 
+        but it's too late - the cave entrance is blocked by a horde of monsters. Zombies, 
+        skeletons, and spiders swarm you in the darkness. Your wooden tools are no match. 
+        The last thing you see is a skeleton's arrow flying toward your face. Game over.
+      </div>
+      <div class="description" style="color:#888; font-size: 9px;">Score: 12</div>
+
+      <div class="btn-row">
+        <a class="mc-btn" href="index.html">Main Menu</a>
+        <a class="mc-btn" href="spawn.html">Respawn</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="music.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You Died! | Minecraft Adventure</title>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/minecraftia" type="text/css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <audio id="bgm" src="media/music.mp3" loop></audio>
+  <audio id="death-sound" src="media/death_sound.mp3" autoplay></audio>
+
+  <div class="page">
+    <img class="bg" src="media/death_village_night_bg.png" alt="Death Scene" />
+    <div class="death-tint"></div>
+    <div class="overlay"></div>
+
+    <div class="content">
+      <div class="title" style="color:#FF4444;">You Died!</div>
+      <div class="description">
+        You wait too long. The sun sets completely, and darkness blankets the village. The 
+        villagers have locked themselves inside their homes. You approach the village gates 
+        in the dark, hoping to find shelter. But the Iron Golem's glowing red eyes spot you 
+        immediately. In the darkness, you look just like a zombie or skeleton - a threat to 
+        the village. The massive guardian charges toward you with earth-shaking steps. You 
+        try to explain, to show you're friendly, but it's too late. The Iron Golem's fist 
+        slams down. The last thing you see is its expressionless face looming above.
+      </div>
+      <div class="description" style="color:#888; font-size: 9px;">Score: 0</div>
+
+      <div class="btn-row">
+        <a class="mc-btn" href="index.html">Main Menu</a>
+        <a class="mc-btn" href="spawn.html">Respawn</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="music.js"></script>
+</body>
+</html>

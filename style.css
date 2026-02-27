@@ -1,0 +1,173 @@
+:root {
+  --mc-shadow: 3px 3px #4C4C4C;
+  --mc-btn-gray: #C6C6C6;
+  --mc-btn-gray-dark: #7B7B7B;
+  --mc-btn-blue: #A0A0FF;
+  --mc-btn-blue-dark: #5252CE;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'MinecraftiaRegular', 'Press Start 2P', monospace;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: default;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to top, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+.title {
+  font-family: 'MinecraftiaRegular', 'Press Start 2P', monospace;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-shadow: 3px 3px 0px #000, -1px -1px 0px #000;
+  text-align: center;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+
+.description {
+  font-family: 'MinecraftiaRegular', 'Press Start 2P', monospace;
+  font-size: 12px;
+  color: #DDDDDD;
+  text-shadow: 2px 2px 0px #000;
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 700px;
+  line-height: 2.2;
+  padding: 0 10px;
+}
+
+
+.btn-row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.mc-btn {
+  font-family: 'MinecraftiaRegular', 'Press Start 2P', monospace;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-shadow: 3px 3px 0 #3F3F3F;
+  
+
+  background: linear-gradient(to bottom, 
+    var(--mc-btn-gray) 0%, 
+    #ABABAB 50%, 
+    var(--mc-btn-gray-dark) 100%);
+  
+
+  border: 2px solid;
+  border-color: #FFFFFF #555555 #555555 #FFFFFF;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.2);
+  
+  width: 250px;
+  height: 25px;
+  padding: 8px;
+  box-sizing: content-box;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.mc-btn:hover {
+  background: linear-gradient(to bottom, 
+    var(--mc-btn-blue) 0%, 
+    #7D7DFF 50%, 
+    var(--mc-btn-blue-dark) 100%);
+  color: #FFFFA0;
+  text-shadow: 3px 3px 0 #252563;
+  border-color: #C6C6FF #3F3F99 #3F3F99 #C6C6FF;
+}
+
+
+.mc-btn:active {
+  border-color: #555555 #FFFFFF #FFFFFF #555555;
+  transform: translate(1px, 1px);
+}
+
+
+.mc-logo {
+  width: 850px;
+  max-width: 80vw;
+  image-rendering: pixelated;
+  margin-bottom: 30px;
+  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.8));
+}
+
+
+audio {
+  display: none;
+}
+
+
+.death-tint {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(160, 0, 0, 0.35);
+  z-index: 1;
+  pointer-events: none;
+}

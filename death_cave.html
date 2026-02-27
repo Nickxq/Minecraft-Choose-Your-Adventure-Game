@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You Died! | Minecraft Adventure</title>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/minecraftia" type="text/css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <audio id="bgm" src="media/music.mp3" loop></audio>
+  <audio id="death-sound" src="media/death_sound.mp3" autoplay></audio>
+
+  <div class="page">
+    <img class="bg" src="media/death_cave_bg.png" alt="Death Scene" />
+    <div class="death-tint"></div>
+    <div class="overlay"></div>
+
+    <div class="content">
+      <div class="title" style="color:#FF4444;">You Died!</div>
+      <div class="description">
+        You lunge at the Creeper with bare hands, but it's too late. The creature's body 
+        swells to maximum size and detonates in a brilliant flash of green light. The 
+        explosion rips through the cave, hurling you backward against the stone wall. 
+        Everything goes dark. The cave rumbles and collapses around you, burying you 
+        beneath tons of stone and regret. Your adventure ends here, lost in the depths.
+      </div>
+      <div class="description" style="color:#888; font-size: 9px;">Score: 0</div>
+
+      <div class="btn-row">
+        <a class="mc-btn" href="index.html">Main Menu</a>
+        <a class="mc-btn" href="spawn.html">Respawn</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="music.js"></script>
+</body>
+</html>
